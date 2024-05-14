@@ -1,0 +1,3 @@
+[submodule "src/randman_repo"]
+	path = src/randman_repo
+	url = https://github.com/fzenke/randman.git

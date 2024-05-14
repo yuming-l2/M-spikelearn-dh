@@ -1,0 +1,9 @@
+python3 src/stdp_cifar2_conv.py 50000 5000 &
+python3 src/stdp_cifar2_conv.py 50000 2000 &
+python3 src/stdp_cifar2_conv.py 50000 1000 &
+python3 src/stdp_cifar2_conv.py 25000 5000 &
+python3 src/stdp_cifar2_conv.py 25000 2000 &
+python3 src/stdp_cifar2_conv.py 25000 1000 &
+python3 src/stdp_cifar2_conv.py 10000 5000 &
+python3 src/stdp_cifar2_conv.py 10000 2000 &
+python3 src/stdp_cifar2_conv.py 10000 1000 &
