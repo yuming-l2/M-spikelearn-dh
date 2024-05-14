@@ -1,14 +1,16 @@
 STDP implemented in memristor-spikelearn, using Deephyper for separate and combined algorithm-circuit optimizations.
 
-### How to run the optimization
+### How to run the parameter optimizations
 
-For algorithm level parameter search (with ideal synapses): [src/stdp_mnist_launcher_local_algorithm.py](src/stdp_mnist_launcher_local_algorithm.py)
+- Separate algorithm and circuit optimization  
+Step 1: Algorithm level parameter search (with ideal synapses): [src/stdp_mnist_launcher_local_algorithm.py](src/stdp_mnist_launcher_local_algorithm.py)  
+Step 2: Optimization of algorithm-to-circuit mapping marameters: [src/stdp_mnist_launcher_local_circuit.py](src/stdp_mnist_launcher_local_circuit.py)
 
-For optimization of algorithm-to-circuit mapping marameters (after algorithm level optimization): [src/stdp_mnist_launcher_local_circuit.py](src/stdp_mnist_launcher_local_circuit.py)
-
-For combined algorithm-circuit optimization: [src/stdp_mnist_launcher_local.py](src/stdp_mnist_launcher_local.py)
+- Combined algorithm and circuit optimization: [src/stdp_mnist_launcher_local.py](src/stdp_mnist_launcher_local.py)
 
 Before launching, *_PATH variables in the launchers should be changed to appropriate locations to store log, and mnist_path should point to mnist.npz.
+
+All three launcher scripts utilize the run_mnist function in src/stdp_mnist_7T1R_func.py to evaluate accuracy and energy.
 
 ### Current status
 
